@@ -1,0 +1,20 @@
+project:
+  name: "Medical AI Prediction System"
+  version: "1.0.0"
+  author: "Bishowdip"
+  student_id: "YOUR_STUDENT_ID"
+
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+
+preprocessing:
+  missing_value_strategy: "iterative"
+  outlier_method: "iqr"
+  scaling_method: "standard"
+  imbalance_method: "smote_tomek"
+
+models:
+  random_state: 42
+  test_size: 0.2
+  cv_folds: 10
